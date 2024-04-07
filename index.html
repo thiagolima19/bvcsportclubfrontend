@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BVC Sport Club Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="header-top">
+        <img src="images.png" alt="" />
+        <h1>Sport Club Registration</h1>
+      </div>
+      <form id="mainForm">
+        <div>
+          <label for="userID">Member ID:</label>
+          <input type="text" id="userID" name="userID" required />
+        </div>
+        <div>
+          <label for="userFullName">Full Name:</label>
+          <input type="text" id="userFullName" name="userFullName" required />
+        </div>
+        <div>
+          <label for="userAddress">Address:</label>
+          <input type="text" id="userAddress" name="userAddress" required />
+        </div>
+        <div>
+          <label for="userStatus">Status:</label>
+          <select id="userStatus" name="userStatus">
+            <option value="">Options</option>
+            <option value="student">Student</option>
+            <option value="staff">Staff</option>
+            <option value="volunteer">Volunteer</option>
+          </select>
+        </div>
+
+        <div class="btn">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+
+      <div id="confirmPage" style="display: none">
+        <div>
+          <img src="images.png" alt="" />
+          <h1>Registration Confirmation</h1>
+        </div>
+        <div>
+          <p id="confirmID"></p>
+          <p id="confirmName"></p>
+          <p id="confirmAddress"></p>
+          <p id="confirmStatus"></p>
+          <p id="confirmFee"></p>
+        </div>
+        <div class="btn">
+          <button
+            id="returnBtn"
+            type="button"
+            style="display: none"
+            onclick="backButton()"
+          >
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
